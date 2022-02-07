@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Камень Ножницы Бумага</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"  rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <div class="page__field">
+                <div class="user">
+                    <h2 class="user__name">
+                        Игрок
+                    </h2>
+                    <div class="user__game">
+                        <div class="user__score score">0</div>
+                        <div class="user__block">
+                            <div class="button-place "><svg class="button-place__svg  width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_ii_77_243)">
+                                <circle r="49.4095" transform="matrix(-0.012024 0.999928 0.999928 0.012024 50 50)" fill="#BC8B95"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_ii_77_243" x="-4.40955" y="-4.40955" width="108.819" height="108.819" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dx="5" dy="5"/>
+                                <feGaussianBlur stdDeviation="10"/>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0.521569 0 0 0 0 0.2 0 0 0 0 0.211765 0 0 0 0.74 0"/>
+                                <feBlend mode="normal" in2="shape" result="effect1_innerShadow_77_243"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dx="-5" dy="-5"/>
+                                <feGaussianBlur stdDeviation="10"/>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0.866667 0 0 0 0 0.733333 0 0 0 0 0.737255 0 0 0 1 0"/>
+                                <feBlend mode="normal" in2="effect1_innerShadow_77_243" result="effect2_innerShadow_77_243"/>
+                                </filter>
+                                </defs>
+                                </svg>
+                                <button class="rock  game-button user-button" draggable="true"  data-choice = "rock"><svg class="user__svg" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="user__circle" r="48.4095" transform="matrix(-0.012024 0.999928 0.999928 0.012024 50.0001 50)" stroke="#172D65" stroke-width="2"/>
+                                    <g clip-path="url(#clip0_13_182)">
+                                    <path d="M59.3306 43.1704L73.466 42.8023C74.3338 42.7797 75.056 43.5046 75.0799 44.4222L75.1664 47.7439C75.1903 48.6616 74.5068 49.4231 73.639 49.4457L59.216 49.8214C59.3772 49.2957 59.4757 48.7406 59.4604 48.1561L59.3306 43.1704ZM49.5619 30.1289C53.031 30.0396 55.9208 32.9403 56.0163 36.6077L56.3195 48.2483C56.3432 49.1597 55.6685 49.9169 54.8066 49.9394L54.7517 49.9408C52.1729 50.008 50.0225 47.8514 49.9515 45.1245L49.8561 41.4644C49.83 40.4595 49.469 40.1033 49.0352 40.1146L47.4449 40.156C47.0238 40.167 46.6909 40.5486 46.6809 40.9945C46.5775 45.6216 44.4288 47.7177 39.8189 51.1503L38.9064 51.8296C38.8221 51.8922 38.7504 51.9719 38.6954 52.0639C38.6403 52.156 38.603 52.2587 38.5856 52.3661C38.5681 52.4735 38.5709 52.5836 38.5937 52.6901C38.6165 52.7965 38.6589 52.8972 38.7184 52.9864L39.6261 54.3453C39.6856 54.4346 39.7611 54.5107 39.8484 54.5691C39.9356 54.6276 40.0328 54.6674 40.1345 54.6861C40.2361 54.7049 40.3402 54.7023 40.4408 54.6785C40.5414 54.6547 40.6365 54.6102 40.7207 54.5474L41.6333 53.8682C43.9074 52.175 45.7981 50.6227 47.2066 48.8087C47.7942 50.5874 49.0703 52.0219 50.6934 52.7555C50.3765 53.4483 50.1893 54.2188 50.2107 55.0398L50.2972 58.3616C50.3306 59.6425 50.8329 60.7876 51.6088 61.6514C50.878 62.5554 50.436 63.7252 50.4693 65.0051L50.5558 68.3268C50.5711 68.9123 50.6984 69.4626 50.8886 69.9801L43.2388 70.1794C39.9062 70.2662 36.6746 68.9501 34.2528 66.5192L31.5788 63.8361L25.2964 63.9998L24.6043 37.428L30.8828 37.2645L34.3117 33.445C36.0312 31.5297 38.4017 30.4172 40.9019 30.3524L49.5619 30.1289ZM58.4919 33.2214L70.0653 32.9199C70.933 32.8973 71.6552 33.6222 71.6791 34.5399L71.7656 37.8616C71.7895 38.7792 71.1061 39.5408 70.2383 39.5634L59.2441 39.8497L59.1576 36.528C59.1271 35.3571 58.8715 34.2564 58.4919 33.2214ZM53.697 68.245L53.6105 64.9232C53.5866 64.0056 54.2701 63.2441 55.1378 63.2215L67.7027 62.8942C68.5704 62.8716 69.2926 63.5965 69.3165 64.5142L69.403 67.8359C69.4269 68.7535 68.7434 69.5151 67.8757 69.5377L55.3109 69.8649C54.4431 69.8875 53.7209 69.1626 53.697 68.245ZM53.4375 58.2808L53.351 54.9591C53.3271 54.0415 54.0106 53.2799 54.8783 53.2573L70.5843 52.8482C71.4521 52.8256 72.1743 53.5506 72.1982 54.4682L72.2847 57.7899C72.3086 58.7076 71.6251 59.4691 70.7574 59.4917L55.0513 59.9008C54.1836 59.9234 53.4614 59.1985 53.4375 58.2808Z" fill="#172D65"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_13_182">
+                                    <rect width="39.8743" height="50.2763" fill="white" transform="matrix(-0.0260375 -0.999661 -0.999661 0.0260375 75.7287 69.3331)"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                    
+                                </button>
+                                </div>
+                            <div class="button-place "><svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_ii_77_243)">
+                                <circle r="49.4095" transform="matrix(-0.012024 0.999928 0.999928 0.012024 50 50)" fill="#BC8B95"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_ii_77_243" x="-4.40955" y="-4.40955" width="108.819" height="108.819" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dx="5" dy="5"/>
+                                <feGaussianBlur stdDeviation="10"/>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0.521569 0 0 0 0 0.2 0 0 0 0 0.211765 0 0 0 0.74 0"/>
+                                <feBlend mode="normal" in2="shape" result="effect1_innerShadow_77_243"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dx="-5" dy="-5"/>
+                                <feGaussianBlur stdDeviation="10"/>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0.866667 0 0 0 0 0.733333 0 0 0 0 0.737255 0 0 0 1 0"/>
+                                <feBlend mode="normal" in2="effect1_innerShadow_77_243" result="effect2_innerShadow_77_243"/>
+                                </filter>
+                                </defs>
+                                </svg>
+                                <button class="scissors game-button user-button" draggable="true" data-choice = "scissors"><svg class="user__svg" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.1525 69.9499L29.9561 41.3978L20.0564 41.466L20.2529 70.018L30.1525 69.9499ZM53.027 37.1345L58.5829 48.4463C58.5866 48.9816 58.3918 49.447 58.064 49.7704L57.0484 50.8482L49.0482 48.7974L48.2803 52.3005L64.7099 56.4348L62.5021 61.6966L48.3201 58.0823L47.5849 61.5494L61.172 65.0251L60.4906 66.7073C59.8429 68.4964 58.1025 69.7575 56.0896 69.7714L41.7021 69.8704C39.0622 69.8886 36.7344 67.2991 36.7155 64.551L36.5558 41.3524C36.5462 39.9605 37.0656 38.7077 37.9502 37.7737L39.2909 35.9798C39.2909 35.9798 40.5326 34.1867 41.9185 34.1772L47.3963 34.1395C47.3963 34.1395 51.1582 34.1136 53.027 37.1345ZM89.3063 34.0653C89.6165 35.9905 88.5076 37.8898 86.6953 38.2948L66.3614 42.2538C66.4658 43.0383 66.732 43.3577 66.8383 44.4277L66.6839 45.9635L86.7776 50.251C88.5623 50.6313 89.73 52.4793 89.4463 54.4086C89.0308 56.3745 87.2904 57.6357 85.5058 57.2553L65.974 53.1067L60.8176 51.893C61.4707 50.8891 61.8916 49.7084 61.8828 48.4236L61.8744 47.2101L56.4879 36.5397L85.3273 31.3087C87.1065 30.9038 88.8635 32.0696 89.3063 34.0653Z" fill="#172D65"/>
+                                    <circle class="user__circle" r="48.4095" transform="matrix(-0.012024 0.999928 0.999928 0.012024 50 50)" stroke="#172D65" stroke-width="2"/>
+                                    </svg>
+                                    
+                                </button>
+                                </div>
+                            <div class="button-place button-place--no_padding"><svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_ii_77_243)">
+                                <circle r="49.4095" transform="matrix(-0.012024 0.999928 0.999928 0.012024 50 50)" fill="#BC8B95"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_ii_77_243" x="-4.40955" y="-4.40955" width="108.819" height="108.819" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dx="5" dy="5"/>
+                                <feGaussianBlur stdDeviation="10"/>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0.521569 0 0 0 0 0.2 0 0 0 0 0.211765 0 0 0 0.74 0"/>
+                                <feBlend mode="normal" in2="shape" result="effect1_innerShadow_77_243"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dx="-5" dy="-5"/>
+                                <feGaussianBlur stdDeviation="10"/>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0.866667 0 0 0 0 0.733333 0 0 0 0 0.737255 0 0 0 1 0"/>
+                                <feBlend mode="normal" in2="effect1_innerShadow_77_243" result="effect2_innerShadow_77_243"/>
+                                </filter>
+                                </defs>
+                                </svg>
+                                <button class="paper game-button user-button" draggable="true" data-choice = "paper"><svg class="user__svg" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.928 70.7114L24.8372 42.1375L14.9306 42.169L15.0214 70.7428L24.928 70.7114ZM49.2149 23.6297C49.8775 24.3063 50.2767 25.2337 50.28 26.2695L50.1835 27.0556L44.6391 38.5028L48.5026 38.4905L77.9855 36.5752C79.8014 36.4623 81.3912 37.9574 81.4965 39.9215C81.6019 41.8856 80.2204 43.6045 78.4045 43.7174L62.9202 44.731L62.923 45.5882L62.5715 49.304L80.9978 49.2454C81.8736 49.2426 82.7148 49.6162 83.3362 50.2841C83.9576 50.952 84.3084 51.8593 84.3114 52.8066C84.3175 54.7354 82.8367 56.3831 81.0205 56.3889L59.8534 56.4561L58.6409 59.3888L76.6788 61.796C78.4958 62.0403 79.7893 63.822 79.5644 65.7872C79.4055 67.7522 77.7589 69.1504 75.8758 68.9064L55.8557 66.2198L55.2987 67.5788C55.135 68.0437 54.8722 68.4731 54.6423 68.8667L67.5004 72.7548C69.3844 73.3203 70.5136 75.3169 70.0574 77.2471C69.535 79.1418 67.6232 80.2194 65.7391 79.6539L35.5938 70.5703C35.4947 70.5706 35.3624 70.4996 35.2633 70.4642L34.8336 70.3584L34.8335 70.3227C32.9488 69.5429 31.5223 67.5115 31.5154 65.3328L31.4416 42.1165C31.4372 40.7236 31.9616 39.4718 32.8502 38.5403L46.6636 20.9233L49.2149 23.6297Z" fill="#172D65"/>
+                                    <circle r="48.9095" transform="matrix(-0.012024 0.999928 0.999928 0.012024 50.0001 50)" stroke="#172D65"/>
+                                    <circle class="user__circle" r="48.4095" transform="matrix(-0.012024 0.999928 0.999928 0.012024 50.0001 50)" stroke="#172D65" stroke-width="2"/>
+                                    </svg>
+                                    
+                                </button>
+                                </div>                           
+                                                        
+                        </div>
+                        <div class="user-arena"><svg   width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_ii_76_208)">
+                            <circle class="arena" r="49.4095" transform="matrix(-0.012024 0.999928 0.999928 0.012024 50 50)" fill="#B691A0"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_ii_76_208" x="-4.40955" y="-4.40955" width="108.819" height="108.819" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dx="5" dy="5"/>
+                            <feGaussianBlur stdDeviation="10"/>
+                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.521569 0 0 0 0 0.2 0 0 0 0 0.211765 0 0 0 0.74 0"/>
+                            <feBlend mode="normal" in2="shape" result="effect1_innerShadow_76_208"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dx="-5" dy="-5"/>
+                            <feGaussianBlur stdDeviation="10"/>
+                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.866667 0 0 0 0 0.733333 0 0 0 0 0.737255 0 0 0 1 0"/>
+                            <feBlend mode="normal" in2="effect1_innerShadow_76_208" result="effect2_innerShadow_76_208"/>
+                            </filter>
+                            </defs>
+                            
+                            </svg>                            
+                            </div>
+                    </div>
+                </div>
+                <h2 class="time">00:00
+                    <!-- <h2 class="time__message"></h2> -->
+                </h2>
+                <div class="computer">
+                    <h2 class="computer__name">
+                        Компьютер
+                    </h2>
+                    <div class="computer__game">
+                        <div class="computer-arena"><svg  width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_ii_76_203)">
+                            <circle class="arena" r="49.4095" transform="matrix(-0.012024 0.999928 0.999928 0.012024 50 50)" fill="#AF99B1"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_ii_76_203" x="-4.40948" y="-4.40955" width="108.819" height="108.819" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dx="5" dy="5"/>
+                            <feGaussianBlur stdDeviation="10"/>
+                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.5375 0 0 0 0 0.349375 0 0 0 0 0.438212 0 0 0 1 0"/>
+                            <feBlend mode="normal" in2="shape" result="effect1_innerShadow_76_203"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dx="-5" dy="-5"/>
+                            <feGaussianBlur stdDeviation="10"/>
+                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.9 0 0 0 0 0.76875 0 0 0 0 0.831641 0 0 0 0.85 0"/>
+                            <feBlend mode="normal" in2="effect1_innerShadow_76_203" result="effect2_innerShadow_76_203"/>
+                            </filter>
+                            </defs>
+                            </svg>
+                            
+                            </div>
+                        <div class="computer__block">
+                            <div class="button-place "><svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_ii_86_2)">
+                                <circle r="49.4095" transform="matrix(-0.012024 0.999928 0.999928 0.012024 50 50)" fill="#AB9DB8"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_ii_86_2" x="-4.40942" y="-4.40955" width="108.819" height="108.819" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dx="5" dy="5"/>
+                                <feGaussianBlur stdDeviation="10"/>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0.5375 0 0 0 0 0.349375 0 0 0 0 0.438212 0 0 0 1 0"/>
+                                <feBlend mode="normal" in2="shape" result="effect1_innerShadow_86_2"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dx="-5" dy="-5"/>
+                                <feGaussianBlur stdDeviation="10"/>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0.9 0 0 0 0 0.76875 0 0 0 0 0.831641 0 0 0 0.85 0"/>
+                                <feBlend mode="normal" in2="effect1_innerShadow_86_2" result="effect2_innerShadow_86_2"/>
+                                </filter>
+                                </defs>
+                                </svg>
+                                <button class="rock game-button computer-button" data-choice = "rock">
+                                    <svg class="computer__svg" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle class="computer__circle" cx="49.9999" cy="50" r="48.4095" transform="rotate(89.3111 49.9999 50)" stroke="#A22626" stroke-width="2"/>
+                                        <g clip-path="url(#clip0_13_12)">
+                                        <path d="M40.6694 43.1704L26.534 42.8022C25.6662 42.7796 24.944 43.5046 24.9201 44.4222L24.8336 47.7439C24.8097 48.6616 25.4932 49.4231 26.361 49.4457L40.784 49.8214C40.6228 49.2957 40.5243 48.7405 40.5396 48.1561L40.6694 43.1704ZM50.4381 30.1289C46.969 30.0396 44.0792 32.9403 43.9837 36.6077L43.6805 48.2483C43.6568 49.1597 44.3315 49.9169 45.1934 49.9393L45.2483 49.9408C47.8271 50.0079 49.9775 47.8514 50.0485 45.1245L50.1439 41.4643C50.17 40.4595 50.531 40.1033 50.9648 40.1146L52.5551 40.156C52.9762 40.167 53.3091 40.5485 53.3191 40.9944C53.4225 45.6216 55.5712 47.7177 60.1811 51.1503L61.0936 51.8295C61.1779 51.8922 61.2496 51.9718 61.3046 52.0639C61.3597 52.156 61.397 52.2586 61.4144 52.3661C61.4319 52.4735 61.4291 52.5836 61.4063 52.69C61.3835 52.7965 61.3411 52.8972 61.2816 52.9864L60.3739 54.3453C60.3144 54.4346 60.2389 54.5106 60.1516 54.5691C60.0644 54.6276 59.9672 54.6673 59.8655 54.6861C59.7639 54.7049 59.6598 54.7023 59.5592 54.6785C59.4586 54.6547 59.3635 54.6102 59.2793 54.5474L58.3667 53.8682C56.0926 52.175 54.2019 50.6227 52.7934 48.8087C52.2058 50.5873 50.9297 52.0218 49.3066 52.7555C49.6235 53.4483 49.8107 54.2187 49.7893 55.0398L49.7028 58.3616C49.6694 59.6425 49.1671 60.7876 48.3912 61.6514C49.122 62.5554 49.564 63.7251 49.5307 65.005L49.4442 68.3268C49.4289 68.9122 49.3016 69.4626 49.1114 69.9801L56.7612 70.1793C60.0938 70.2662 63.3254 68.9501 65.7472 66.5191L68.4212 63.8361L74.7036 63.9998L75.3957 37.428L69.1172 37.2644L65.6883 33.445C63.9688 31.5296 61.5983 30.4172 59.0981 30.3524L50.4381 30.1289ZM41.5081 33.2213L29.9347 32.9199C29.067 32.8973 28.3448 33.6222 28.3209 34.5398L28.2344 37.8616C28.2105 38.7792 28.8939 39.5408 29.7617 39.5634L40.7559 39.8497L40.8424 36.528C40.8729 35.3571 41.1285 34.2564 41.5081 33.2213ZM46.303 68.245L46.3895 64.9232C46.4134 64.0056 45.7299 63.2441 44.8622 63.2215L32.2973 62.8942C31.4296 62.8716 30.7074 63.5965 30.6835 64.5141L30.597 67.8359C30.5731 68.7535 31.2566 69.515 32.1243 69.5376L44.6891 69.8649C45.5569 69.8875 46.2791 69.1626 46.303 68.245ZM46.5625 58.2808L46.649 54.9591C46.6729 54.0414 45.9894 53.2799 45.1217 53.2573L29.4157 52.8482C28.5479 52.8256 27.8257 53.5505 27.8018 54.4682L27.7153 57.7899C27.6914 58.7075 28.3749 59.4691 29.2426 59.4917L44.9487 59.9008C45.8164 59.9234 46.5386 59.1984 46.5625 58.2808Z" fill="#A22626"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_13_12">
+                                        <rect width="39.8743" height="50.2763" fill="white" transform="translate(24.2713 69.3331) rotate(-88.508)"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        
+                                </button>
+                                </div>
+                            <div class="button-place "><svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_ii_86_2)">
+                                <circle r="49.4095" transform="matrix(-0.012024 0.999928 0.999928 0.012024 50 50)" fill="#AB9DB8"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_ii_86_2" x="-4.40942" y="-4.40955" width="108.819" height="108.819" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dx="5" dy="5"/>
+                                <feGaussianBlur stdDeviation="10"/>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0.5375 0 0 0 0 0.349375 0 0 0 0 0.438212 0 0 0 1 0"/>
+                                <feBlend mode="normal" in2="shape" result="effect1_innerShadow_86_2"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dx="-5" dy="-5"/>
+                                <feGaussianBlur stdDeviation="10"/>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0.9 0 0 0 0 0.76875 0 0 0 0 0.831641 0 0 0 0.85 0"/>
+                                <feBlend mode="normal" in2="effect1_innerShadow_86_2" result="effect2_innerShadow_86_2"/>
+                                </filter>
+                                </defs>
+                                </svg>
+                                <button class="scissors game-button computer-button" data-choice = "scissors"><svg class="computer__svg" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M69.8474 69.9499L70.0438 41.3979L79.9435 41.466L79.747 70.018L69.8474 69.9499ZM46.9729 37.1346L41.417 48.4463C41.4133 48.9816 41.6081 49.447 41.9359 49.7705L42.9515 50.8482L50.9517 48.7974L51.7196 52.3005L35.29 56.4348L37.4978 61.6967L51.6798 58.0823L52.415 61.5495L38.8279 65.0251L39.5094 66.7073C40.157 68.4964 41.8974 69.7576 43.9103 69.7714L58.2978 69.8704C60.9377 69.8886 63.2655 67.2991 63.2845 64.551L63.4441 41.3524C63.4537 39.9605 62.9343 38.7077 62.0497 37.7737L60.709 35.9799C60.709 35.9799 59.4673 34.1867 58.0814 34.1772L52.6036 34.1395C52.6036 34.1395 48.8417 34.1136 46.9729 37.1346ZM10.6936 34.0653C10.3834 35.9905 11.4923 37.8898 13.3046 38.2949L33.6385 42.2538C33.5341 43.0383 33.2679 43.3577 33.1616 44.4277L33.316 45.9635L13.2223 50.251C11.4377 50.6314 10.2699 52.4793 10.5537 54.4086C10.9691 56.3745 12.7095 57.6357 14.4941 57.2554L34.0259 53.1067L39.1823 51.893C38.5292 50.8892 38.1083 49.7084 38.1171 48.4236L38.1255 47.2101L43.512 36.5397L14.6726 31.3087C12.8934 30.9039 11.1364 32.0696 10.6936 34.0653Z" fill="#A22626"/>
+                                    <circle class="computer__circle" cx="49.9999" cy="50" r="48.4095" transform="rotate(89.3111 49.9999 50)" stroke="#A22626" stroke-width="2"/>
+                                    </svg>
+                                    
+                                </button>
+                                </div>
+                            <div class="button-place button-place--no_padding"><svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_ii_86_2)">
+                                <circle r="49.4095" transform="matrix(-0.012024 0.999928 0.999928 0.012024 50 50)" fill="#AB9DB8"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_ii_86_2" x="-4.40942" y="-4.40955" width="108.819" height="108.819" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dx="5" dy="5"/>
+                                <feGaussianBlur stdDeviation="10"/>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0.5375 0 0 0 0 0.349375 0 0 0 0 0.438212 0 0 0 1 0"/>
+                                <feBlend mode="normal" in2="shape" result="effect1_innerShadow_86_2"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dx="-5" dy="-5"/>
+                                <feGaussianBlur stdDeviation="10"/>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0.9 0 0 0 0 0.76875 0 0 0 0 0.831641 0 0 0 0.85 0"/>
+                                <feBlend mode="normal" in2="effect1_innerShadow_86_2" result="effect2_innerShadow_86_2"/>
+                                </filter>
+                                </defs>
+                                </svg>
+                                <button class="paper game-button computer-button" data-choice = "paper"><svg class="computer__svg" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M75.072 70.7114L75.1628 42.1375L85.0694 42.169L84.9786 70.7428L75.072 70.7114ZM50.7851 23.6297C50.1225 24.3063 49.7233 25.2337 49.72 26.2695L49.8165 27.0556L55.3609 38.5028L51.4974 38.4905L22.0145 36.5752C20.1986 36.4623 18.6088 37.9574 18.5035 39.9215C18.3981 41.8856 19.7796 43.6045 21.5955 43.7174L37.0798 44.731L37.077 45.5882L37.4285 49.304L19.0022 49.2454C18.1264 49.2426 17.2852 49.6162 16.6638 50.2841C16.0424 50.952 15.6916 51.8593 15.6886 52.8066C15.6825 54.7354 17.1633 56.3831 18.9795 56.3889L40.1466 56.4561L41.3591 59.3888L23.3212 61.796C21.5042 62.0403 20.2107 63.822 20.4356 65.7872C20.5945 67.7522 22.2411 69.1504 24.1242 68.9064L44.1443 66.2198L44.7013 67.5788C44.865 68.0437 45.1278 68.4731 45.3577 68.8667L32.4996 72.7548C30.6156 73.3203 29.4864 75.3169 29.9426 77.2471C30.465 79.1418 32.3768 80.2194 34.2609 79.6539L64.4062 70.5703C64.5053 70.5706 64.6376 70.4996 64.7367 70.4642L65.1664 70.3584L65.1665 70.3227C67.0512 69.5429 68.4777 67.5115 68.4846 65.3328L68.5584 42.1165C68.5628 40.7236 68.0384 39.4718 67.1498 38.5403L53.3364 20.9233L50.7851 23.6297Z" fill="#A22626"/>
+                                    <circle cx="49.9999" cy="50" r="48.9095" transform="rotate(89.3111 49.9999 50)" stroke="#A22626"/>
+                                    <circle class="computer__circle" cx="49.9999" cy="50" r="48.4095" transform="rotate(89.3111 49.9999 50)" stroke="#A22626" stroke-width="2"/>
+                                    </svg>
+                                    </button>
+                                </div>                    
+                            
+                            
+
+                        </div>
+                        <div class="computer__score score">0</div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="popup">
+                <div class="popup__block">
+                    <h2 class="popup__message">Проиграл</h2>
+                    <button class="popup__button">играть заново</button>
+
+                </div>
+            </div>    
+        </div>
+    </div>
+    <script src="index.js"></script>    
+</body>
+</html>

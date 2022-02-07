@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.page {
+  background: linear-gradient(90deg, #c68080 0%, #a3a7cb 100%);
+  height: 100vh;
+}
+
+.container {
+  max-width: 1105px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.page__field {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user__game {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.computer__game {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 20px;
+  text-align: end;
+  align-items: center;
+}
+
+.computer-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.user-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.score {
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.user__score {
+  color: #172d65;
+}
+
+.computer__score {
+  grid-column: 3;
+  color: #a12626;
+}
+
+.time {
+  height: 28px;
+  margin-top: 83px;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  text-shadow: 1px 0 1px #172d65, 0 1px 1px #172d65, -1px 0 1px #172d65,
+    0 -1px 1px #172d65;
+}
+
+.user__name {
+  margin-top: 83px;
+  color: white;
+  font-size: 24px;
+  line-height: 28px;
+  text-shadow: 1px 0 1px #172d65, 0 1px 1px #172d65, -1px 0 1px #172d65,
+    0 -1px 1px #172d65;
+}
+
+.computer__name {
+  margin-top: 83px;
+  text-align: end;
+  color: white;
+  font-size: 24px;
+  line-height: 28px;
+  text-shadow: 1px 0 1px #a12626, 0 1px 1px #a12626, -1px 0 1px #a12626,
+    0 -1px 1px #a12626;
+}
+
+.game-button {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.button-place {
+  width: 168px;
+  position: relative;
+  padding-bottom: 41px;
+}
+
+.button-place--no_padding {
+  padding-bottom: 0;
+}
+.user__svg {
+  cursor: pointer;
+  border-radius: 50%;
+  border-color: #172d65;
+  transition: all 0.5s ease;
+
+  box-shadow: 0 1px 5px #172d65;
+}
+
+.user__svg:hover:not(.user_svg--activ) {
+  border: 4px solid transparent;
+  box-shadow: none;
+}
+
+.user_svg--activ {
+}
+
+.user__circle {
+  transition: all 0.3s ease;
+}
+
+.cir--activ {
+  border: 9px solid transparent;
+  stroke-width: 7px;
+}
+
+.hide {
+  display: none;
+}
+.user-arena {
+  position: relative;
+}
+
+.user-arena circle {
+}
+
+.user-arena--hover {
+  fill: #f03939;
+}
+
+.computer-arena {
+  position: relative;
+}
+
+.computer__svg {
+  border-radius: 50%;
+  border-color: #a22626;
+  transition: all 0.3s ease;
+
+  box-shadow: 0 1px 5px #a22626;
+}
+
+.computer__circle {
+  transition: all 3s ease;
+}
+
+.animation {
+  animation: go-reduce 1.5s 1 reverse;
+  box-shadow: none;
+}
+
+.arena--win {
+  fill: #61c847;
+}
+
+.arena--loss {
+  fill: #f03939;
+}
+
+@keyframes go-reduce {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/*//////////////////////// POPUP//////////////////////////// */
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.7s all;
+}
+
+.popup--active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.7s all;
+}
+
+.popup__block {
+  width: 55%;
+  height: 55%;
+  left: 365px;
+  top: 136px;
+  background: #efbfd6;
+  box-shadow: 0px 4px 8px #172d65;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup__message {
+  padding-top: 5%;
+
+  text-shadow: 1px 0 1px #172d65, 0 1px 1px #172d65, -1px 0 1px #172d65,
+    0 -1px 1px #172d65;
+  font-size: 35px;
+  line-height: 41px;
+  color: white;
+}
+
+.popup__button {
+  margin-bottom: 5%;
+  width: 275px;
+  height: 71px;
+  background: none;
+
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  color: #172d65;
+  transition: all 0.3s ease;
+  border: 2px solid #172d65;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.popup__button:hover {
+  color: #a12626;
+  border: 3px solid #a12626;
+  box-sizing: border-box;
+}
+/*//////////////////////// MEDIA//////////////////////////// */
+
+@media screen and (max-width: 900px) {
+  .button-place {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .button-place {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+}
