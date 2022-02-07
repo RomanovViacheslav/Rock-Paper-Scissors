@@ -69,9 +69,9 @@ function stepUser ()  {
 
 
 function stepComputer (choiceUser) {
-   if (popup.classList.contains('popup--active')){
-      return false;
-   }   
+   // if (popup.classList.contains('popup--active')){
+   //    return false;
+   // }   
    compButton.forEach((elem) => {        
       if (elem.classList.contains("rock")){   
       elem.classList.add('animation')
@@ -92,6 +92,7 @@ function stepComputer (choiceUser) {
       clone.classList.add('clone')
       placeComp.appendChild(clone);
       compArr.style.display='none'
+      clone.classList.remove('animation');
       setTimeout (function () {clone.querySelector('.computer__circle').classList.add('cir--activ');}, 70)
     }, 2500);
     let choiceComp = compArr.dataset.choice;   
@@ -106,20 +107,21 @@ function getScore (choiceUser, choiceComp) {
    setTimeout (function () {
    if ((choiceUser === "rock" && choiceComp === "rock") || 
    (choiceUser === "paper" && choiceComp === "paper") || 
-   (choiceUser === "scissors" && choiceComp === "scissors")){
-      console.log('ничья');
+   (choiceUser === "scissors" && choiceComp === "scissors")){      
    } else if((choiceUser === "rock" && choiceComp === "paper") || 
    (choiceUser === "scissors" && choiceComp === "rock") ||
    (choiceUser === "paper" && choiceComp === "scissors")){
       compСount++;
       compScore.textContent = compСount;
       placeComp.querySelector('.arena').classList.add('arena--win')
-      place.querySelector('.arena').classList.add('arena--loss');
+      // place.querySelector('.arena').classList.add('arena--loss');
+      placeComp.querySelector('.clone').classList.add('animation--win')
    } else {
       userСount++;
       userScore.textContent = userСount;
       place.querySelector('.arena').classList.add('arena--win');
-      placeComp.querySelector('.arena').classList.add('arena--loss')
+      // placeComp.querySelector('.arena').classList.add('arena--loss')
+      place.querySelector('.clone').classList.add('animation--win')
    }
    // startAgain ()
    setTimeout(buttonRestart, 2000)
@@ -141,6 +143,7 @@ function buttonRestart (){
       placeComp.querySelector('.arena').classList.remove('arena--win'); 
       compButton.forEach((elem) => {    
          elem.style.display='block'
+         elem.classList.remove('animation');
       })  
    
 }
