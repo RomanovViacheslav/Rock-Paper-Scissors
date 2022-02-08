@@ -299,7 +299,7 @@ body {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .page {
     padding-top: 60px;
     background: linear-gradient(180deg, #c68080 0%, #a3a7cb 100%);
@@ -395,5 +395,15 @@ body {
     position: absolute;
     bottom: 0;
     right: 15px;
+  }
+
+  .popup__button {
+    width: 160px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .popup__message {
+    font-size: 30px;
   }
 }

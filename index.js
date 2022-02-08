@@ -154,7 +154,7 @@ function showWinner() {
    popup.classList.add('popup--active');
    
    if (userСount > compСount) {
-      popupMessage.textContent = 'Вы победили! Победа была достойная!';
+      popupMessage.textContent = 'Вы победили! Эта битва войдет в историю!';
    } else if (userСount < compСount) {
       popupMessage.textContent = 'Вы проиграли! Компьютер уничтожил Вас...';
    } else {
