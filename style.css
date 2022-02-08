@@ -301,7 +301,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .page {
-    padding-top: 60px;
+    padding-top: 50px;
     background: linear-gradient(180deg, #c68080 0%, #a3a7cb 100%);
     height: 100vh;
   }
@@ -405,5 +405,20 @@ body {
 
   .popup__message {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .page {
+    padding-top: 20px;
+  }
+  .button-place svg {
+    height: 80px;
+    width: 80px;
+  }
+
+  .button-place {
+    height: 80px;
+    width: 80px;
   }
 }
