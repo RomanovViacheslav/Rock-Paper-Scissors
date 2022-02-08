@@ -422,3 +422,18 @@ body {
     width: 80px;
   }
 }
+
+@media screen and (max-height: 625px) {
+  .page {
+    padding-top: 20px;
+  }
+  .button-place svg {
+    height: 80px;
+    width: 80px;
+  }
+
+  .button-place {
+    height: 80px;
+    width: 80px;
+  }
+}
