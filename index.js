@@ -101,9 +101,9 @@ function stepComputer (choiceUser) {
 }
 
 function getScore (choiceUser, choiceComp) {
-   if (popup.classList.contains('popup--active')){
-      return false;
-   }
+   // if (popup.classList.contains('popup--active')){
+   //    return false;
+   // }
    setTimeout (function () {
    if ((choiceUser === "rock" && choiceComp === "rock") || 
    (choiceUser === "paper" && choiceComp === "paper") || 
@@ -123,7 +123,7 @@ function getScore (choiceUser, choiceComp) {
       // placeComp.querySelector('.arena').classList.add('arena--loss')
       place.querySelector('.clone').classList.add('animation--win')
    }
-   // startAgain ()
+   
    setTimeout(buttonRestart, 2000)
    },2700)
    

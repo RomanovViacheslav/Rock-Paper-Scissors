@@ -212,6 +212,10 @@ body {
   }
 }
 
+.computer__name-mobile {
+  display: none;
+}
+
 /*//////////////////////// POPUP//////////////////////////// */
 
 .popup {
@@ -296,4 +300,100 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+  .page {
+    padding-top: 60px;
+    background: linear-gradient(180deg, #c68080 0%, #a3a7cb 100%);
+    height: 100vh;
+  }
+
+  .page__field {
+    display: block;
+    position: relative;
+  }
+
+  .user__game {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .computer__game {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .user__name {
+    margin-top: 0;
+  }
+
+  .computer__name {
+    margin-top: 0;
+  }
+
+  .user__block {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .computer__block {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .button-place {
+    padding: 0;
+  }
+
+  .computer-arena__svg {
+    transform: rotate(90deg);
+  }
+
+  .user-arena {
+    text-align: center;
+  }
+
+  .computer-arena {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .user-arena__svg {
+    transform: rotate(90deg);
+  }
+
+  .time {
+    margin: 0;
+  }
+  .computer__name {
+    display: none;
+  }
+
+  .computer__name-mobile {
+    display: block;
+    text-align: start;
+    color: white;
+    font-size: 24px;
+    line-height: 28px;
+    text-shadow: 1px 0 1px #a12626, 0 1px 1px #a12626, -1px 0 1px #a12626,
+      0 -1px 1px #a12626;
+  }
+
+  .score {
+    font-size: 40px;
+  }
+
+  .user__score {
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+
+  .computer__score {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+  }
 }
