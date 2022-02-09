@@ -2,14 +2,6 @@
   box-sizing: border-box;
 }
 
-textarea,
-input[type="text"],
-input[type="button"],
-input[type="submit"] {
-  -webkit-appearance: none;
-  border-radius: 0;
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -115,7 +107,12 @@ body {
 }
 
 .game-button:focus {
-  outline: 0;
+  outline: none !important;
+  /* border: none !important; */
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  background-color: none;
+  border-radius: 50%;
 }
 
 .button-place {
