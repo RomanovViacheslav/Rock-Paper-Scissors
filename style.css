@@ -24,7 +24,7 @@ body {
 }
 
 .user__game {
-  margin-top: 55px;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
@@ -33,7 +33,7 @@ body {
 }
 
 .computer__game {
-  margin-top: 55px;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
@@ -100,16 +100,20 @@ body {
 }
 
 .game-button {
-  border: 1px solid transparent;
+  border-radius: 50%;
+
+  border: none;
   background: none;
-  padding: 0;
-  outline: 0 !important;
+  padding: 5px;
+
   background-color: none;
 }
 
 .button-place {
   width: 168px;
   position: relative;
+
+  padding: 5px;
   padding-bottom: 41px;
 }
 
@@ -147,6 +151,7 @@ body {
 }
 .user-arena {
   position: relative;
+  padding: 5px;
 }
 
 .user-arena circle {
@@ -158,6 +163,7 @@ body {
 
 .computer-arena {
   position: relative;
+  padding: 5px;
 }
 
 .computer__svg {
@@ -295,9 +301,9 @@ body {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 780px) {
   .button-place {
-    width: 100px;
+    width: 100%;
   }
 }
 
@@ -346,7 +352,9 @@ body {
   }
 
   .button-place {
-    padding: 0;
+    width: 100%;
+    padding-bottom: 0;
+    /* padding: 0; */
   }
 
   .computer-arena__svg {
@@ -410,7 +418,7 @@ body {
   }
 }
 
-@media screen and (max-width: 350px) and (max-height: 650px) {
+@media screen and (max-width: 350px) and (max-height: 655px) {
   .page {
     padding-top: 20px;
   }
@@ -422,5 +430,6 @@ body {
   .button-place {
     height: 80px;
     width: 80px;
+    width: 100%;
   }
 }
