@@ -104,8 +104,8 @@ body {
   background: none;
   padding: 0;
   outline: 0;
-  /* background-color: none; */
-  border-radius: 50%;
+  background-color: none;
+  border-radius: 20px;
 }
 
 .game-button:focus {
