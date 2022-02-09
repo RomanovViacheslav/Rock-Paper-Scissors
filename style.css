@@ -104,11 +104,13 @@ body {
   background: none;
   padding: 0;
   outline: 0;
+  /* background-color: none; */
+  border-radius: 50%;
 }
 
 .game-button:focus {
   outline: none !important;
-  /* border: none !important; */
+  border: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   background-color: none;
