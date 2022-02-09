@@ -100,12 +100,11 @@ body {
 }
 
 .game-button {
-  border: none;
-  background: none;
+  border: 0 !important;
+  background: none !important;
   padding: 0;
-  outline: 0;
-  /* background-color: none; */
-  border-radius: 50%;
+  outline: 0 !important;
+  background-color: #ff0000;
 }
 
 .game-button:focus {
