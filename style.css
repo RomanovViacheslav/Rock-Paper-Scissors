@@ -145,7 +145,6 @@ body {
 
 .user__circle {
   transition: all 0.3s ease;
-  -webkit-transform: translate3d(0, 0, 0);
 }
 
 .cir--activ {
