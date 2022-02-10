@@ -111,7 +111,7 @@ body {
 
 .button-place {
   width: 168px;
-  position: relative !important;
+  position: relative;
   padding-bottom: 41px;
 }
 
