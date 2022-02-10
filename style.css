@@ -147,7 +147,6 @@ body {
   transition: all 0.3s ease;
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
 }
 
 .cir--activ {
@@ -181,7 +180,6 @@ body {
   box-shadow: 0 1px 5px #a22626;
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
 }
 
 .computer__circle {
