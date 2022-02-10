@@ -41,7 +41,9 @@ function getTime() {
 getTime()
 
 function stepUser ()  {  
-
+   if (time <= 3){
+      return;
+    }   
    userButton.forEach((elem) => {  
       elem.addEventListener('click', function clickButton () {   
          elem.querySelector('svg').classList.toggle('user_svg--activ');
@@ -69,9 +71,9 @@ function stepUser ()  {
 
 
 function stepComputer (choiceUser) {
-   // if (popup.classList.contains('popup--active')){
-   //    return false;
-   // }   
+   if (time <= 3){
+     return;
+   }   
    compButton.forEach((elem) => {        
       if (elem.classList.contains("rock")){   
       elem.classList.add('animation')
@@ -100,11 +102,7 @@ function stepComputer (choiceUser) {
     getScore (choiceUser, choiceComp);
 }
 
-function getScore (choiceUser, choiceComp) {
-   // if (popup.classList.contains('popup--active')){
-   //    return false;
-   // }
-   setTimeout (function () {
+function getCount (choiceUser, choiceComp) {
    if ((choiceUser === "rock" && choiceComp === "rock") || 
    (choiceUser === "paper" && choiceComp === "paper") || 
    (choiceUser === "scissors" && choiceComp === "scissors")){      
@@ -123,9 +121,41 @@ function getScore (choiceUser, choiceComp) {
       // placeComp.querySelector('.arena').classList.add('arena--loss')
       place.querySelector('.clone').classList.add('animation--win')
    }
+   // setTimeout(buttonRestart, 2000)
+}
+
+
+function getScore (choiceUser, choiceComp) {
+
+   if (time <= 3){
+      console.log('ttttt');
+      getCount(choiceUser, choiceComp);
+      setTimeout (buttonRestart,1000)
+    }  else {
+   setTimeout (getCount,2700, choiceUser, choiceComp);
+   setTimeout (buttonRestart,4700);
+   }
+   // if ((choiceUser === "rock" && choiceComp === "rock") || 
+   // (choiceUser === "paper" && choiceComp === "paper") || 
+   // (choiceUser === "scissors" && choiceComp === "scissors")){      
+   // } else if((choiceUser === "rock" && choiceComp === "paper") || 
+   // (choiceUser === "scissors" && choiceComp === "rock") ||
+   // (choiceUser === "paper" && choiceComp === "scissors")){
+   //    compСount++;
+   //    compScore.textContent = compСount;
+   //    placeComp.querySelector('.arena').classList.add('arena--win')
+   //    // place.querySelector('.arena').classList.add('arena--loss');
+   //    placeComp.querySelector('.clone').classList.add('animation--win')
+   // } else {
+   //    userСount++;
+   //    userScore.textContent = userСount;
+   //    place.querySelector('.arena').classList.add('arena--win');
+   //    // placeComp.querySelector('.arena').classList.add('arena--loss')
+   //    place.querySelector('.clone').classList.add('animation--win')
+   // }
    
-   setTimeout(buttonRestart, 2000)
-   },2700)
+   // setTimeout(buttonRestart, 2000)
+   
    
 }
 
