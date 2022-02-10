@@ -172,6 +172,7 @@ function buttonRestart (){
       userButton.forEach((elem) => {    
          elem.style.display='block'
          elem.querySelector('svg').classList.remove('user_svg--activ');
+         elem.querySelector('svg').classList.remove('user__svg-hover');
          elem.disabled = false;
       })
       placeComp.removeChild(document.querySelector('.clone'));
