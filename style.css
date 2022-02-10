@@ -127,12 +127,12 @@ body {
   box-shadow: 0 1px 5px #172d65;
 }
 
-/* .user__svg:hover:not(.user_svg--activ) {
+.user__svg-hover:not(.user_svg--activ) {
   border: 4px solid transparent;
   box-shadow: none;
   position: relative;
   transition: all 0.5s ease;
-}  */
+}
 
 .user_svg--activ {
 }
@@ -219,18 +219,22 @@ body {
 }
 
 .animation--hover {
-  animation: go-hover 1s 1 reverse;
+  animation: go-hover 1s infinite;
+  /* border: 4px solid transparent; */
   box-shadow: none;
-  transition: all 0.5s ease;
+  /* transition: all 0.5s ease; */
 }
 
 @keyframes go-hover {
+  50% {
+    background-position: 93% center;
+  }
   /* 0% {
     transform: scale3d(1, 1, 1);
   } */
-  50% {
+  /* 50% {
     transform: scale3d(0.9, 0.9, 0.9);
-  }
+  } */
   /* 100% {
     transform: scale3d(1, 1, 1);
   } */

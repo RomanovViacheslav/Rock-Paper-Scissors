@@ -46,10 +46,10 @@ function stepUser ()  {
     }
    userButton.forEach((elem) => {
       elem.addEventListener('mouseover', function hoverButton (){
-         elem.classList.add('animation--hover');
+         elem.querySelector('svg').classList.add('user__svg-hover');
       })
       elem.addEventListener('mouseout', function hoverButton (){
-         elem.classList.remove('animation--hover');
+         elem.querySelector('svg').classList.remove('user__svg-hover');
       })  
       elem.addEventListener('click', function clickButton () {   
          elem.querySelector('svg').classList.toggle('user_svg--activ');
