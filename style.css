@@ -103,8 +103,7 @@ body {
   border: none;
   background: none;
   padding: 0;
-  outline: 0;
-  background-color: none;
+  position: relative;
   border-radius: 20px;
 }
 
@@ -113,7 +112,7 @@ body {
 
 .button-place {
   width: 168px;
-  position: relative;
+  position: relative !important;
   padding-bottom: 41px;
 }
 
