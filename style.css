@@ -305,10 +305,8 @@ body {
 
 @media screen and (max-width: 500px) {
   .page {
-    padding-top: 50px;
+    padding-top: 40px;
     background: linear-gradient(180deg, #c68080 0%, #a3a7cb 100%);
-    width: 100%;
-    height: 100%;
   }
 
   .page__field {
@@ -438,7 +436,7 @@ body {
   }
 }
 
-@media screen and (max-width: 350px) and (max-height: 650px) {
+@media screen and (max-width: 350px) {
   .page {
     padding-top: 20px;
   }
@@ -461,10 +459,59 @@ body {
   }
 
   .user__game {
+    display: flex;
+  }
+  .computer__game {
+    display: flex;
+  }
+
+  .computer-arena {
+    height: 90px;
+    width: 90px;
   }
 
   .user-arena {
+    height: 90px;
+    width: 90px;
   }
+}
+
+@media screen and (max-width: 400px) and (max-height: 655px) {
+  .page {
+    padding-top: 20px;
+  }
+  .game-button {
+    height: 90px;
+    width: 90px;
+  }
+
+  .button-place {
+    height: 90px;
+    width: 90px;
+  }
+
+  .button-place svg {
+    height: 80px;
+    width: 80px;
+  }
+
+  .game-button svg {
+  }
+
+  .user__game {
+    display: flex;
+  }
+  .computer__game {
+    display: flex;
+  }
+
   .computer-arena {
+    height: 90px;
+    width: 90px;
+  }
+
+  .user-arena {
+    height: 90px;
+    width: 90px;
   }
 }
