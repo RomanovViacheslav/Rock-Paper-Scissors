@@ -169,7 +169,7 @@ body {
   border-radius: 50%;
   border-color: #a22626;
   transition: all 0.3s ease;
-
+  position: relative;
   box-shadow: 0 1px 5px #a22626;
 }
 
