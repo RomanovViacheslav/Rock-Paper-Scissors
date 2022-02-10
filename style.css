@@ -103,8 +103,7 @@ body {
   border: none;
   background: none;
   padding: 0;
-
-  border-radius: 20px;
+  border-radius: 90px;
 }
 
 .game-button:focus {
@@ -140,7 +139,6 @@ body {
 
 .user__circle {
   transition: all 0.3s ease;
-  position: relative;
 }
 
 .cir--activ {
