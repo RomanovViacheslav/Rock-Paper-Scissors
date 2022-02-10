@@ -146,7 +146,6 @@ body {
 .user__circle {
   transition: all 0.3s ease;
   -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
 }
 
 .cir--activ {
@@ -179,7 +178,6 @@ body {
   position: relative;
   box-shadow: 0 1px 5px #a22626;
   -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
 }
 
 .computer__circle {
