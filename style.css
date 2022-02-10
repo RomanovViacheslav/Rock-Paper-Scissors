@@ -127,12 +127,12 @@ body {
   box-shadow: 0 1px 5px #172d65;
 }
 
-.user__svg:hover:not(.user_svg--activ) {
+/* .user__svg:hover:not(.user_svg--activ) {
   border: 4px solid transparent;
   box-shadow: none;
   position: relative;
   transition: all 0.5s ease;
-}
+}  */
 
 .user_svg--activ {
 }
@@ -201,7 +201,7 @@ body {
   }
 }
 
-.animation--win {
+.animation--win:not(.user_svg--activ) {
   animation: go-zoom 1.5s 1 reverse;
   box-shadow: none;
 }
@@ -216,6 +216,24 @@ body {
   100% {
     transform: scale3d(1, 1, 1);
   }
+}
+
+.animation--hover {
+  animation: go-hover 1s 1 reverse;
+  box-shadow: none;
+  transition: all 0.5s ease;
+}
+
+@keyframes go-hover {
+  /* 0% {
+    transform: scale3d(1, 1, 1);
+  } */
+  50% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  /* 100% {
+    transform: scale3d(1, 1, 1);
+  } */
 }
 
 .computer__name-mobile {

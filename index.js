@@ -43,8 +43,14 @@ getTime()
 function stepUser ()  {  
    if (time <= 3){
       return;
-    }   
-   userButton.forEach((elem) => {  
+    }
+   userButton.forEach((elem) => {
+      elem.addEventListener('mouseover', function hoverButton (){
+         elem.classList.add('animation--hover');
+      })
+      elem.addEventListener('mouseout', function hoverButton (){
+         elem.classList.remove('animation--hover');
+      })  
       elem.addEventListener('click', function clickButton () {   
          elem.querySelector('svg').classList.toggle('user_svg--activ');
          let clone = elem.cloneNode(true)
