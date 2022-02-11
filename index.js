@@ -63,9 +63,10 @@ function stepUser ()  {
          if (place.querySelector('.game-button') !== null){
             setTimeout (function () {
                clone.querySelector('.user__circle').classList.add('cir--activ');
+               clone.querySelector('svg').classList.remove('user__svg-hover');
                userButton.forEach((elem) =>{
-                  elem.disabled = true;                 
-                  elem.querySelector('svg').classList.add('user_svg--activ');
+                  elem.disabled = true;               
+
                })
             }, 100)
             stepComputer (choiceUser)            
