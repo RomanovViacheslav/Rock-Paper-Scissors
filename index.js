@@ -52,7 +52,7 @@ function stepUser ()  {
          elem.querySelector('svg').classList.remove('user__svg-hover');
       })  
       elem.addEventListener('click', function clickButton () {   
-         elem.querySelector('svg').classList.toggle('user_svg--activ');
+         // elem.querySelector('svg').classList.toggle('user_svg--activ');
          let clone = elem.cloneNode(true)
          clone.classList.add('clone')
          place.appendChild(clone)
@@ -81,19 +81,19 @@ function stepComputer (choiceUser) {
    if (time <= 3){
      return;
    }   
-   // compButton.forEach((elem) => {        
-   //    if (elem.classList.contains("rock")){   
-   //    elem.classList.add('animation')
-   //    } else if (elem.classList.contains("scissors")) {
-   //       setTimeout(function () {
-   //          elem.classList.add('animation');
-   //        }, 500)
-   //    } else {
-   //       setTimeout(function () {
-   //          elem.classList.add('animation');
-   //        }, 1000)
-   //    }      
-   // })
+   compButton.forEach((elem) => {        
+      if (elem.classList.contains("rock")){   
+      elem.classList.add('animation')
+      } else if (elem.classList.contains("scissors")) {
+         setTimeout(function () {
+            elem.classList.add('animation');
+          }, 500)
+      } else {
+         setTimeout(function () {
+            elem.classList.add('animation');
+          }, 1000)
+      }      
+   })
    let compArr=Array.from(compButton);  
    compArr = compArr[Math.floor(Math.random() * compArr.length)]  
    setTimeout(function () {      
@@ -102,7 +102,7 @@ function stepComputer (choiceUser) {
       placeComp.appendChild(clone);
       compArr.style.display='none'
       clone.classList.remove('animation');
-      setTimeout (function () {clone.querySelector('.computer__circle').classList.add('cir--activ');}, 70)
+      setTimeout (function () {clone.querySelector('.computer__circle').classList.add('cir--activ');}, 50)
     }, 2500);
     let choiceComp = compArr.dataset.choice;   
    
