@@ -130,7 +130,7 @@ body {
 .user__svg-hover:not(.user_svg--activ) {
   border: 4px solid transparent;
   box-shadow: none;
-  position: relative;
+
   transition: all 0.5s ease;
 }
 
@@ -217,13 +217,6 @@ body {
     transform: scale3d(1, 1, 1);
   }
 }
-
-.animation--hover {
-}
-
-/* @keyframes go-hover {
-  
-} */
 
 .computer__name-mobile {
   display: none;

@@ -81,19 +81,19 @@ function stepComputer (choiceUser) {
    if (time <= 3){
      return;
    }   
-   compButton.forEach((elem) => {        
-      if (elem.classList.contains("rock")){   
-      elem.classList.add('animation')
-      } else if (elem.classList.contains("scissors")) {
-         setTimeout(function () {
-            elem.classList.add('animation');
-          }, 500)
-      } else {
-         setTimeout(function () {
-            elem.classList.add('animation');
-          }, 1000)
-      }      
-   })
+   // compButton.forEach((elem) => {        
+   //    if (elem.classList.contains("rock")){   
+   //    elem.classList.add('animation')
+   //    } else if (elem.classList.contains("scissors")) {
+   //       setTimeout(function () {
+   //          elem.classList.add('animation');
+   //        }, 500)
+   //    } else {
+   //       setTimeout(function () {
+   //          elem.classList.add('animation');
+   //        }, 1000)
+   //    }      
+   // })
    let compArr=Array.from(compButton);  
    compArr = compArr[Math.floor(Math.random() * compArr.length)]  
    setTimeout(function () {      
