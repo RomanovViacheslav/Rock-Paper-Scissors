@@ -135,7 +135,7 @@ body {
 }
 
 .user__circle {
-  transition: all 3s ease;
+  transition: all 2s ease;
 }
 
 .cir--activ {
@@ -170,7 +170,8 @@ body {
 }
 
 .computer__circle {
-  transition: all 3s ease;
+  position: relative;
+  transition: all 2s ease;
 }
 
 .animation {
