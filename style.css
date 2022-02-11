@@ -132,12 +132,10 @@ body {
   box-shadow: none;
 
   transition: all 0.5s ease;
-  -webkit-transition: 190ms width linear;
 }
 
 .user__circle {
-  transition: all 0.3s ease;
-  -webkit-transition: 190ms width linear;
+  transition: all 3s ease;
 }
 
 .cir--activ {
