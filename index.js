@@ -61,9 +61,10 @@ function stepUser ()  {
          
          
          if (place.querySelector('.game-button') !== null){
+            clone.querySelector('svg').classList.remove('user__svg-hover');
             setTimeout (function () {
                setTimeout (function () {clone.querySelector('.user__circle').classList.add('cir--activ');}, 50)
-               clone.querySelector('svg').classList.remove('user__svg-hover');
+               
                userButton.forEach((elem) =>{
                   elem.disabled = true;               
 
