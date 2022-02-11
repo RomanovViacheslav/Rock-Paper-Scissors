@@ -135,12 +135,14 @@ body {
 }
 
 .user__circle {
+  position: relative;
   transition: all 2s ease;
 }
 
 .cir--activ {
   border: 9px solid transparent;
   stroke-width: 7px;
+  position: relative;
 }
 
 .hide {
@@ -171,7 +173,7 @@ body {
 
 .computer__circle {
   position: relative;
-  transition: all 2s ease;
+  transition: all 0.3s ease;
 }
 
 .animation {
